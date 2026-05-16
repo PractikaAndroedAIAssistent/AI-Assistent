@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="vpaJUD915ZPN8BHT3Ax7">
+    <mxGraphModel dx="1414" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dbServer" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Сервер баз данных" vertex="1">
+          <mxGeometry height="120" width="180" x="750" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="postgres" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="PostgreSQL" vertex="1">
+          <mxGeometry height="50" width="110" x="780" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="appServer" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Сервер приложений" vertex="1">
+          <mxGeometry height="260" width="360" x="300" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="apiGateway" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="API Gateway (Ktor/Spring)" vertex="1">
+          <mxGeometry height="50" width="140" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="syncService" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Сервис синхронизации" vertex="1">
+          <mxGeometry height="50" width="140" x="480" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="aiServiceBackend" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="AI-шлюз (LLM proxy)" vertex="1">
+          <mxGeometry height="50" width="140" x="320" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="authService" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Auth Service (JWT)" vertex="1">
+          <mxGeometry height="50" width="140" x="480" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="pdfParser" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Парсер PDF" vertex="1">
+          <mxGeometry height="50" width="140" x="320" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationService" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Сервис уведомлений" vertex="1">
+          <mxGeometry height="50" width="140" x="480" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="mobileDevice" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Смартфон (Android)" vertex="1">
+          <mxGeometry height="260" width="360" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mobileApp" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Мобильное приложение (Kotlin)" vertex="1">
+          <mxGeometry height="50" width="140" x="70" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uiCompose" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="UI (Jetpack Compose)" vertex="1">
+          <mxGeometry height="50" width="140" x="230" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="localDb" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Локальная БД (Room)" vertex="1">
+          <mxGeometry height="50" width="140" x="70" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Кэш (DataStore)" vertex="1">
+          <mxGeometry height="50" width="140" x="230" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="backgroundSync" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Фоновый синхронизатор" vertex="1">
+          <mxGeometry height="50" width="140" x="70" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="desktopDevice" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="Рабочая станция администратора" vertex="1">
+          <mxGeometry height="260" width="360" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="desktopCache" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Локальное хранилище (IndexedDB)" vertex="1">
+          <mxGeometry height="50" width="140" x="630" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="adminPanel" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Панель администратора" vertex="1">
+          <mxGeometry height="50" width="140" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="teacherTools" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="Инструменты преподавателя" vertex="1">
+          <mxGeometry height="50" width="140" x="550" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="llmNode" parent="1" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" value="LLM-провайдер" vertex="1">
+          <mxGeometry height="120" width="200" x="840" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="openaiApi" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" value="OpenAI / GigaChat (или локальный LLM)" vertex="1">
+          <mxGeometry height="50" width="160" x="860" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-mobile-appserver" edge="1" parent="1" source="mobileDevice" style="endArrow=open;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="appServer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="490" as="sourcePoint" />
+            <mxPoint x="660" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-mobile-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="HTTPS / WebSocket" vertex="1">
+          <mxGeometry height="20" width="140" x="410" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-desktop-appserver" edge="1" parent="1" source="desktopDevice" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0;exitDx=260;exitDy=185;entryX=-0.004;entryY=0.253;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="appServer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="300" as="sourcePoint" />
+            <mxPoint x="840" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-desktop-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="HTTPS / REST" vertex="1">
+          <mxGeometry height="20" width="100" x="500" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-app-db" edge="1" parent="1" source="appServer" style="endArrow=open;html=1;rounded=0;exitX=0;exitY=0;exitDx=125;exitDy=0;entryX=0;entryY=0;entryDx=65;entryDy=180;exitPerimeter=0;entryPerimeter=0;" target="dbServer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="560" as="sourcePoint" />
+            <mxPoint x="760" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn-app-db-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="JDBC" vertex="1">
+          <mxGeometry height="20" width="50" x="680" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-app-llm-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="HTTPS / API ключ" vertex="1">
+          <mxGeometry height="20" width="120" x="680" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="shape=note;align=left;spacingLeft=10;spacingTop=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=10;" value="Легенда: ◻ узел развертывания (куб)&#xa;         ▭ артефакт (прямоугольник)&#xa;         ---&gt; сетевое соединение (HTTP/HTTPS/JDBC)" vertex="1">
+          <mxGeometry height="70" width="250" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2-gWLOIldq8FltFu0ZFM-1" edge="1" parent="1" source="appServer" style="endArrow=open;html=1;rounded=0;exitX=0.142;exitY=-0.003;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=65;entryDy=200;entryPerimeter=0;exitPerimeter=0;" target="llmNode">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="746" y="360" as="sourcePoint" />
+            <mxPoint x="700" y="459" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
