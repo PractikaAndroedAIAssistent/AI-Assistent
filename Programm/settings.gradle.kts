@@ -27,3 +27,4 @@ rootProject.name = "Assistent AI"
 
 include(":app")
 include(":core:core_common")
+include(":core:core_designsystem")
