@@ -1,0 +1,232 @@
+###############################################################################
+# StudentAI — единый каталог версий для всех модулей проекта.
+# Все версии и координаты библиотек хранятся ТОЛЬКО здесь.
+# При добавлении новой зависимости — обновляйте этот файл, а не build.gradle.
+###############################################################################
+
+[versions]
+# ─── Build tooling ──────────────────────────────────────────────────────────
+agp = "8.13.2"
+kotlin = "2.0.21"
+ksp = "2.0.21-1.0.27"
+googleServices = "4.4.2"
+
+# ─── Android SDK levels (ТЗ §4.3.2: minSdk 26, JDK 17) ──────────────────────
+compileSdk = "36"
+targetSdk = "36"
+minSdk = "26"
+jvmTarget = "17"
+
+# ─── Kotlinx ────────────────────────────────────────────────────────────────
+coroutines = "1.9.0"
+kotlinxSerialization = "1.7.3"
+kotlinxDatetime = "0.6.1"
+
+# ─── AndroidX core / lifecycle ──────────────────────────────────────────────
+coreKtx = "1.17.0"
+lifecycleRuntimeKtx = "2.10.0"
+activityCompose = "1.12.4"
+splashscreen = "1.0.1"
+appcompat = "1.7.0"
+
+# ─── Compose ────────────────────────────────────────────────────────────────
+composeBom = "2024.09.00"
+navigationCompose = "2.8.4"
+hiltNavigationCompose = "1.2.0"
+materialIconsExtended = "1.7.5"
+
+# ─── Hilt ───────────────────────────────────────────────────────────────────
+hilt = "2.52"
+hiltWork = "1.2.0"
+
+# ─── Persistence ────────────────────────────────────────────────────────────
+room = "2.6.1"
+datastore = "1.1.1"
+
+# ─── Networking ─────────────────────────────────────────────────────────────
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+retrofitKotlinxSerialization = "1.0.0"
+
+# ─── Async, background work ─────────────────────────────────────────────────
+workManager = "2.9.1"
+
+# ─── Firebase / FCM ─────────────────────────────────────────────────────────
+firebaseBom = "33.5.1"
+
+# ─── PDF / OCR ──────────────────────────────────────────────────────────────
+pdfboxAndroid = "2.0.27.0"
+mlkitTextRecognition = "16.0.1"
+
+# ─── Media / images ─────────────────────────────────────────────────────────
+coil = "2.7.0"
+
+# ─── Logging ────────────────────────────────────────────────────────────────
+timber = "5.0.1"
+
+# ─── Security ───────────────────────────────────────────────────────────────
+securityCrypto = "1.1.0-alpha06"
+
+# ─── Test ───────────────────────────────────────────────────────────────────
+junit = "4.13.2"
+junitJupiter = "5.11.3"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+assertk = "0.28.1"
+turbine = "1.2.0"
+mockk = "1.13.13"
+robolectric = "4.13"
+androidxTestCore = "1.6.1"
+androidxTestRunner = "1.6.2"
+androidxTestRules = "1.6.1"
+
+###############################################################################
+# Libraries
+###############################################################################
+[libraries]
+# ─── Kotlinx ────────────────────────────────────────────────────────────────
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-play-services = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
+
+# ─── AndroidX core / lifecycle ──────────────────────────────────────────────
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+
+# ─── Compose ────────────────────────────────────────────────────────────────
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "materialIconsExtended" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+# ─── Hilt ───────────────────────────────────────────────────────────────────
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+androidx-hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltWork" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltWork" }
+
+# ─── Room ───────────────────────────────────────────────────────────────────
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
+androidx-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+
+# ─── DataStore ──────────────────────────────────────────────────────────────
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "datastore" }
+
+# ─── Networking ─────────────────────────────────────────────────────────────
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlinx-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerialization" }
+okhttp-core = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+
+# ─── WorkManager ────────────────────────────────────────────────────────────
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workManager" }
+androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "workManager" }
+
+# ─── Firebase ───────────────────────────────────────────────────────────────
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx" }
+
+# ─── PDF / OCR ──────────────────────────────────────────────────────────────
+pdfbox-android = { group = "com.tom-roush", name = "pdfbox-android", version.ref = "pdfboxAndroid" }
+mlkit-text-recognition = { group = "com.google.mlkit", name = "text-recognition", version.ref = "mlkitTextRecognition" }
+mlkit-text-recognition-cyrillic = { group = "com.google.mlkit", name = "text-recognition-cyrillic", version.ref = "mlkitTextRecognition" }
+
+# ─── Media ──────────────────────────────────────────────────────────────────
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+# ─── Logging ────────────────────────────────────────────────────────────────
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+
+# ─── Security ───────────────────────────────────────────────────────────────
+androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "securityCrypto" }
+
+# ─── Tests ──────────────────────────────────────────────────────────────────
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junit-jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiter" }
+junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiter" }
+junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params", version.ref = "junitJupiter" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
+assertk = { group = "com.willowtreeapps.assertk", name = "assertk", version.ref = "assertk" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+
+###############################################################################
+# Bundles — group commonly used libraries
+###############################################################################
+[bundles]
+compose-ui = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-material3",
+    "androidx-compose-material-icons-extended",
+]
+compose-debug = [
+    "androidx-compose-ui-tooling",
+    "androidx-compose-ui-test-manifest",
+]
+networking = [
+    "retrofit-core",
+    "retrofit-kotlinx-serialization",
+    "okhttp-core",
+    "okhttp-logging-interceptor",
+]
+room = [
+    "androidx-room-runtime",
+    "androidx-room-ktx",
+]
+junit5 = [
+    "junit-jupiter-api",
+    "junit-jupiter-params",
+]
+unit-test = [
+    "kotlinx-coroutines-test",
+    "assertk",
+    "turbine",
+    "mockk",
+]
+
+###############################################################################
+# Plugins
+###############################################################################
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
