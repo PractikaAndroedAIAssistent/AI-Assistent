@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================== -->
+    <!-- core_ui: общие сообщения об ошибках для AppException иерархии. -->
+    <!-- Feature-модули могут переопределить через свой ErrorMessageResolver. -->
+    <!-- ============================================================== -->
+
+    <!-- Сетевые ошибки -->
+    <string name="core_ui_error_network_no_connection">Нет соединения с интернетом. Проверьте подключение.</string>
+    <string name="core_ui_error_network_timeout">Превышено время ожидания ответа. Повторите попытку.</string>
+    <string name="core_ui_error_network_server">Сервер временно недоступен. Попробуйте позже.</string>
+    <string name="core_ui_error_network_http">Ошибка соединения с сервером (код %1$d).</string>
+    <string name="core_ui_error_network_serialization">Не удалось обработать ответ сервера.</string>
+    <string name="core_ui_error_network_cancelled">Запрос отменён.</string>
+
+    <!-- Авторизация -->
+    <string name="core_ui_error_auth_invalid_credentials">Неверный email или пароль.</string>
+    <string name="core_ui_error_auth_token_expired">Сессия истекла. Войдите снова.</string>
+    <string name="core_ui_error_auth_refresh_failed">Не удалось продлить сессию. Войдите снова.</string>
+    <string name="core_ui_error_auth_unauthorized">Требуется авторизация.</string>
+    <string name="core_ui_error_auth_forbidden">Недостаточно прав для этого действия.</string>
+    <string name="core_ui_error_auth_email_taken">Этот email уже зарегистрирован.</string>
+    <string name="core_ui_error_auth_account_disabled">Аккаунт заблокирован. Обратитесь в поддержку.</string>
+
+    <!-- Валидация -->
+    <string name="core_ui_error_validation_generic">Проверьте корректность введённых данных.</string>
+
+    <!-- Хранилище -->
+    <string name="core_ui_error_storage_not_found">Запрашиваемые данные не найдены.</string>
+    <string name="core_ui_error_storage_constraint">Конфликт данных. Повторите действие.</string>
+    <string name="core_ui_error_storage_access_denied">Нет доступа к данным.</string>
+    <string name="core_ui_error_storage_out_of_space">Недостаточно места на устройстве.</string>
+    <string name="core_ui_error_storage_io">Ошибка чтения/записи данных.</string>
+
+    <!-- AI -->
+    <string name="core_ui_error_ai_no_data">В выбранном материале нет ответа на ваш вопрос.</string>
+    <string name="core_ui_error_ai_context_limit">Материал слишком велик. Попробуйте задать более узкий вопрос.</string>
+    <string name="core_ui_error_ai_rate_limited">Слишком много запросов. Попробуйте через несколько секунд.</string>
+    <string name="core_ui_error_ai_provider">AI-сервис временно недоступен.</string>
+    <string name="core_ui_error_ai_model_unavailable">Выбранная модель недоступна.</string>
+    <string name="core_ui_error_ai_invalid_response">Не удалось разобрать ответ AI.</string>
+
+    <!-- PDF -->
+    <string name="core_ui_error_pdf_corrupted">PDF-файл повреждён или нечитаем.</string>
+    <string name="core_ui_error_pdf_encrypted">PDF защищён паролем — это не поддерживается.</string>
+    <string name="core_ui_error_pdf_no_text_layer">В PDF нет текстового слоя. Будет использовано распознавание (OCR).</string>
+    <string name="core_ui_error_pdf_ocr_failed">Не удалось распознать текст в документе.</string>
+    <string name="core_ui_error_pdf_too_large">Файл слишком большой.</string>
+    <string name="core_ui_error_pdf_chunking_failed">Не удалось подготовить текст для поиска.</string>
+
+    <!-- Неизвестная ошибка -->
+    <string name="core_ui_error_unknown">Произошла непредвиденная ошибка.</string>
+
+</resources>
