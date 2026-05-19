@@ -46,7 +46,6 @@ datastore = "1.1.1"
 # ─── Networking ─────────────────────────────────────────────────────────────
 retrofit = "2.11.0"
 okhttp = "4.12.0"
-retrofitKotlinxSerialization = "1.0.0"
 
 # ─── Async, background work ─────────────────────────────────────────────────
 workManager = "2.9.1"
@@ -134,7 +133,7 @@ androidx-datastore = { group = "androidx.datastore", name = "datastore", version
 
 # ─── Networking ─────────────────────────────────────────────────────────────
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-retrofit-kotlinx-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerialization" }
+retrofit-kotlinx-serialization = { group = "com.squareup.retrofit2", name = "converter-kotlinx-serialization", version.ref = "retrofit" }
 okhttp-core = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
