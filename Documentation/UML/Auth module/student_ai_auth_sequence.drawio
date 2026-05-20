@@ -1,0 +1,136 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" compressed="false" version="28.1.2">
+  <diagram id="student-ai-auth-sequence" name="Page-1">
+    <mxGraphModel dx="2081" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Диаграмма последовательности модуля авторизации" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="430" y="5" width="620" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="Пользователь" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry y="40" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="Интерфейс системы" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="300" y="40" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="Модуль авторизации" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="630" y="40" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="Локальное хранилище" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="960" y="40" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" value="Главный экран" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="40" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" style="dashed=1;dashPattern=12 8;endArrow=none;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="94" as="sourcePoint" />
+            <mxPoint x="100" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2" style="dashed=1;dashPattern=12 8;endArrow=none;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="94" as="sourcePoint" />
+            <mxPoint x="400" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l3" style="dashed=1;dashPattern=12 8;endArrow=none;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="94" as="sourcePoint" />
+            <mxPoint x="730" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l4" style="dashed=1;dashPattern=12 8;endArrow=none;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="94" as="sourcePoint" />
+            <mxPoint x="1060" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l5" style="dashed=1;dashPattern=12 8;endArrow=none;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="94" as="sourcePoint" />
+            <mxPoint x="1360" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="394" y="110" width="12" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="724" y="226" width="12" height="394" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1054" y="300" width="12" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1354" y="642" width="12" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="1. Открыть экран входа" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;entryX=-0.053;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="116" as="sourcePoint" />
+            <mxPoint x="400" y="116" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" value="2. Ввести email и пароль" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;entryX=-0.024;entryY=0.121;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="178" as="sourcePoint" />
+            <mxPoint x="390" y="178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" value="3. Нажать «Войти»" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;entryX=-0.034;entryY=0.229;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="238" as="sourcePoint" />
+            <mxPoint x="390" y="238" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" value="&lt;div&gt;4. Проверить учетные данные&lt;/div&gt;&lt;div&gt;(email, password)&lt;/div&gt;" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;exitX=0.991;exitY=0.229;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.01;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a3" source="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="238" as="sourcePoint" />
+            <mxPoint x="720" y="238" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" value="5. Получить профиль пользователя(email)" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;exitX=0.995;exitY=0.227;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.059;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a4" source="a3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="316" as="sourcePoint" />
+            <mxPoint x="1050" y="316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" value="6. Профиль и хэш пароля" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;dashed=1;fontSize=14;entryX=1.044;entryY=0.424;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.011;exitY=0.39;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="a3" source="a4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="388" as="sourcePoint" />
+            <mxPoint x="730" y="388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" value="&lt;div&gt;7. Сохранить сессию пользователя&lt;/div&gt;&lt;div&gt;(userId, role)&lt;/div&gt;" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;entryX=-0.167;entryY=0.668;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.987;exitY=0.599;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="a4" source="a3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="462" as="sourcePoint" />
+            <mxPoint x="1050" y="462" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" value="8. Сессия сохранена" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;dashed=1;fontSize=14;entryX=1;entryY=0.786;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.05;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="a3" source="a4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="536" as="sourcePoint" />
+            <mxPoint x="740" y="536" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" value="&lt;div&gt;9. Авторизация успешна&lt;/div&gt;&lt;div&gt;(role, profile)&lt;/div&gt;" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;dashed=1;fontSize=14;entryX=0.99;entryY=0.871;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.056;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" target="a2" source="a3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="608" as="sourcePoint" />
+            <mxPoint x="400" y="608" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" value="10. Открыть главный экран по роли" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;fontSize=14;exitX=1.013;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.056;entryY=0.501;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="a5" source="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="676" as="sourcePoint" />
+            <mxPoint x="1350" y="676" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" value="11. Показать домашний экран" style="html=1;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=classic;endFill=1;dashed=1;fontSize=14;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="744" as="sourcePoint" />
+            <mxPoint x="100" y="744" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
