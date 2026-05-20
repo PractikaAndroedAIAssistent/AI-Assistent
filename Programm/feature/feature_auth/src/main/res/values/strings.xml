@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ─────────── Login screen ─────────── -->
+    <string name="feature_auth_login_title">Вход</string>
+    <string name="feature_auth_login_subtitle">Добро пожаловать в StudentAI</string>
+    <string name="feature_auth_login_email_label">Email</string>
+    <string name="feature_auth_login_password_label">Пароль</string>
+    <string name="feature_auth_login_submit">Войти</string>
+    <string name="feature_auth_login_forgot_password">Забыли пароль?</string>
+    <string name="feature_auth_login_no_account">Нет аккаунта? Зарегистрироваться</string>
+
+    <!-- ─────────── Register screen ─────────── -->
+    <string name="feature_auth_register_title">Регистрация</string>
+    <string name="feature_auth_register_subtitle">Создайте аккаунт StudentAI</string>
+    <string name="feature_auth_register_full_name_label">ФИО</string>
+    <string name="feature_auth_register_email_label">Email</string>
+    <string name="feature_auth_register_password_label">Пароль</string>
+    <string name="feature_auth_register_password_repeat_label">Повторите пароль</string>
+    <string name="feature_auth_register_role_label">Роль</string>
+    <string name="feature_auth_register_role_student">Студент</string>
+    <string name="feature_auth_register_role_teacher">Преподаватель</string>
+    <string name="feature_auth_register_university_label">Учебное заведение</string>
+    <string name="feature_auth_register_group_label">Группа</string>
+    <string name="feature_auth_register_course_label">Курс</string>
+    <string name="feature_auth_register_speciality_label">Специальность</string>
+    <string name="feature_auth_register_submit">Создать аккаунт</string>
+    <string name="feature_auth_register_have_account">Уже есть аккаунт? Войти</string>
+
+    <!-- ─────────── Profile screen ─────────── -->
+    <string name="feature_auth_profile_title">Профиль</string>
+    <string name="feature_auth_profile_edit">Редактировать</string>
+    <string name="feature_auth_profile_save">Сохранить</string>
+    <string name="feature_auth_profile_cancel">Отмена</string>
+    <string name="feature_auth_profile_logout">Выйти из аккаунта</string>
+    <string name="feature_auth_profile_logout_confirm_title">Выйти из аккаунта?</string>
+    <string name="feature_auth_profile_logout_confirm_message">Вы будете отключены от облака; все локальные данные останутся на устройстве.</string>
+
+    <!-- ─────────── Validation messages ─────────── -->
+    <string name="feature_auth_validation_password_mismatch">Пароли не совпадают</string>
+    <string name="feature_auth_validation_email_required">Введите email</string>
+    <string name="feature_auth_validation_password_required">Введите пароль</string>
+    <string name="feature_auth_validation_full_name_required">Введите ФИО</string>
+
+    <!-- ─────────── Snackbars ─────────── -->
+    <string name="feature_auth_snackbar_registered">Аккаунт создан. Добро пожаловать!</string>
+    <string name="feature_auth_snackbar_profile_saved">Профиль обновлён</string>
+    <string name="feature_auth_snackbar_logged_out">Вы вышли из аккаунта</string>
+
+</resources>
