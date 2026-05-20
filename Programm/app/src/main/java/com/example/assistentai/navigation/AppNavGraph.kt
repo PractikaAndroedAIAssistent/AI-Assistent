@@ -2,24 +2,26 @@ package com.example.assistentai.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.assistentai.welcome.WelcomeRoute
-import com.example.assistentai.welcome.WelcomeScreen
 import ru.studentai.core.navigation.compose.NavigatorEffectHandler
 import ru.studentai.core.navigation.navigator.Navigator
 import ru.studentai.feature.auth.presentation.navigation.AuthRoutes
 import ru.studentai.feature.auth.presentation.navigation.authGraph
+import ru.studentai.feature.home.presentation.navigation.HomeRoutes
+import ru.studentai.feature.home.presentation.navigation.homeGraph
 
 /**
  * Корневой навигационный граф приложения.
  *
  * Текущий состав destination'ов:
- *  • [AuthRoutes.Login] — экран входа (feature_auth)
- *  • [AuthRoutes.Register] — экран регистрации (feature_auth)
+ *  • [AuthRoutes.Login] — вход (feature_auth, стартовая точка)
+ *  • [AuthRoutes.Register] — регистрация (feature_auth)
  *  • [AuthRoutes.Profile] — экран профиля (feature_auth)
- *  • [WelcomeRoute] — временный «Вход выполнен» (app-уровень) — заменится на
- *    [ru.studentai.feature.home.HomeRoute] после реализации feature_home.
+ *  • [HomeRoutes.Home] — главный экран (feature_home), доступен после логина
+ *
+ * Quick-actions из feature_home пока не имеют целевых экранов (их фичи ещё не реализованы),
+ * поэтому колбэк onQuickAction — заглушка-no-op. По мере подключения фич сюда добавятся
+ * навигации на конкретные destination'ы.
  */
 @Composable
 public fun AppNavGraph(navigator: Navigator) {
@@ -33,7 +35,7 @@ public fun AppNavGraph(navigator: Navigator) {
     ) {
         authGraph(
             onLoggedIn = {
-                navController.navigate(WelcomeRoute) {
+                navController.navigate(HomeRoutes.Home) {
                     popUpTo(navController.graph.id) { inclusive = true }
                     launchSingleTop = true
                 }
@@ -54,15 +56,14 @@ public fun AppNavGraph(navigator: Navigator) {
                 navController.navigate(AuthRoutes.Register)
             },
         )
-        composable<WelcomeRoute> {
-            WelcomeScreen(
-                onLoggedOut = {
-                    navController.navigate(AuthRoutes.Login) {
-                        popUpTo(navController.graph.id) { inclusive = true }
-                        launchSingleTop = true
-                    }
-                },
-            )
-        }
+        homeGraph(
+            onNavigateToProfile = {
+                navController.navigate(AuthRoutes.Profile)
+            },
+            onQuickAction = {
+                // Целевые экраны фич ещё не реализованы — действие игнорируется
+                // до подключения соответствующих feature_* модулей (notes/pdf/ai/tests/flashcards/etc.).
+            },
+        )
     }
 }
