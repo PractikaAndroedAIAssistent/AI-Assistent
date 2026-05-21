@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ─────────── TopBar и приветствие ─────────── -->
+    <string name="feature_home_title">Главная</string>
+    <string name="feature_home_greeting_morning">Доброе утро</string>
+    <string name="feature_home_greeting_day">Добрый день</string>
+    <string name="feature_home_greeting_evening">Добрый вечер</string>
+    <string name="feature_home_greeting_night">Доброй ночи</string>
+    <string name="feature_home_role_student">Студент</string>
+    <string name="feature_home_role_teacher">Преподаватель</string>
+
+    <!-- ─────────── Блок «Ближайшая пара» ─────────── -->
+    <string name="feature_home_upcoming_lesson">Ближайшая пара</string>
+    <string name="feature_home_upcoming_lesson_empty">Сегодня пар больше нет</string>
+    <string name="feature_home_upcoming_lesson_unavailable">Расписание появится позже</string>
+
+    <!-- ─────────── Блок «Дедлайны на неделю» ─────────── -->
+    <string name="feature_home_week_deadlines">Дедлайны на неделю</string>
+    <string name="feature_home_week_deadlines_empty">На неделе нет дедлайнов</string>
+    <string name="feature_home_week_deadlines_unavailable">Дедлайны появятся позже</string>
+
+    <!-- ─────────── Блок «Быстрые действия» (студент) ─────────── -->
+    <string name="feature_home_quick_actions">Быстрые действия</string>
+    <string name="feature_home_quick_action_new_note">Конспект</string>
+    <string name="feature_home_quick_action_upload_pdf">PDF</string>
+    <string name="feature_home_quick_action_open_ai">AI</string>
+    <string name="feature_home_quick_action_new_test">Тест</string>
+    <string name="feature_home_quick_action_flashcards">Карточки</string>
+
+    <!-- ─────────── Блок «Быстрые действия» (преподаватель) ─────────── -->
+    <string name="feature_home_quick_action_upload_material">Материал</string>
+    <string name="feature_home_quick_action_create_test">Создать тест</string>
+    <string name="feature_home_quick_action_analytics">Аналитика</string>
+
+    <!-- ─────────── Блок «Средний балл» ─────────── -->
+    <string name="feature_home_average_score">Средний балл</string>
+    <string name="feature_home_average_score_unavailable">Оценок ещё нет</string>
+    <string name="feature_home_score_trend_up">Растёт</string>
+    <string name="feature_home_score_trend_down">Снижается</string>
+    <string name="feature_home_score_trend_flat">Стабильно</string>
+
+    <!-- ─────────── Блок «Рекомендации» ─────────── -->
+    <string name="feature_home_recommendations">Рекомендации по подготовке</string>
+    <string name="feature_home_recommendations_unavailable">Рекомендации появятся, когда мы увидим первую оценку</string>
+
+    <!-- ─────────── Блоки преподавателя ─────────── -->
+    <string name="feature_home_teacher_tasks">Задачи преподавателя</string>
+    <string name="feature_home_teacher_tasks_empty">Новых задач нет</string>
+    <string name="feature_home_teacher_tasks_unavailable">Задачи появятся позже</string>
+    <string name="feature_home_group_activity">Активность группы</string>
+    <string name="feature_home_group_activity_unavailable">Аналитика подключится позже</string>
+    <string name="feature_home_pending_reviews">На проверку</string>
+    <string name="feature_home_pending_reviews_empty">Проверять нечего</string>
+
+    <!-- ─────────── Top bar actions ─────────── -->
+    <string name="feature_home_action_profile">Профиль</string>
+
+    <!-- ─────────── Common ─────────── -->
+    <string name="feature_home_priority_low">Низкий</string>
+    <string name="feature_home_priority_normal">Обычный</string>
+    <string name="feature_home_priority_high">Высокий</string>
+    <string name="feature_home_priority_critical">Критичный</string>
+</resources>

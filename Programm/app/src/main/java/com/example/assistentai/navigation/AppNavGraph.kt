@@ -7,21 +7,27 @@ import ru.studentai.core.navigation.compose.NavigatorEffectHandler
 import ru.studentai.core.navigation.navigator.Navigator
 import ru.studentai.feature.auth.presentation.navigation.AuthRoutes
 import ru.studentai.feature.auth.presentation.navigation.authGraph
+import ru.studentai.feature.home.domain.model.QuickAction
 import ru.studentai.feature.home.presentation.navigation.HomeRoutes
 import ru.studentai.feature.home.presentation.navigation.homeGraph
+import ru.studentai.feature.schedule.presentation.navigation.ScheduleRoutes
+import ru.studentai.feature.schedule.presentation.navigation.scheduleGraph
+import ru.studentai.feature.tasks.presentation.navigation.TasksRoutes
+import ru.studentai.feature.tasks.presentation.navigation.tasksGraph
+import ru.studentai.feature.grades.presentation.navigation.GradesRoutes
+import ru.studentai.feature.grades.presentation.navigation.gradesGraph
 
 /**
  * Корневой навигационный граф приложения.
  *
- * Текущий состав destination'ов:
- *  • [AuthRoutes.Login] — вход (feature_auth, стартовая точка)
- *  • [AuthRoutes.Register] — регистрация (feature_auth)
- *  • [AuthRoutes.Profile] — экран профиля (feature_auth)
- *  • [HomeRoutes.Home] — главный экран (feature_home), доступен после логина
+ * Destination'ы:
+ *  • feature_auth: Login / Register / Profile
+ *  • feature_home: Home
+ *  • feature_schedule: Schedule / LessonEdit
+ *  • feature_tasks: Tasks list / Task edit
  *
- * Quick-actions из feature_home пока не имеют целевых экранов (их фичи ещё не реализованы),
- * поэтому колбэк onQuickAction — заглушка-no-op. По мере подключения фич сюда добавятся
- * навигации на конкретные destination'ы.
+ * QuickAction'ы Student/Teacher временно ведут на задачи —
+ * последующие фичи добавят свои destination'ы.
  */
 @Composable
 public fun AppNavGraph(navigator: Navigator) {
@@ -60,10 +66,39 @@ public fun AppNavGraph(navigator: Navigator) {
             onNavigateToProfile = {
                 navController.navigate(AuthRoutes.Profile)
             },
-            onQuickAction = {
-                // Целевые экраны фич ещё не реализованы — действие игнорируется
-                // до подключения соответствующих feature_* модулей (notes/pdf/ai/tests/flashcards/etc.).
+            onQuickAction = { action ->
+                when (action) {
+                    is QuickAction.Student, is QuickAction.Teacher ->
+                        navController.navigate(TasksRoutes.List)
+                }
             },
+        )
+        scheduleGraph(
+            onNavigateToAddLesson = {
+                navController.navigate(ScheduleRoutes.LessonEdit(itemId = null))
+            },
+            onNavigateToEditLesson = { id ->
+                navController.navigate(ScheduleRoutes.LessonEdit(itemId = id))
+            },
+            onCloseEditor = { navController.popBackStack() },
+        )
+        tasksGraph(
+            onNavigateToAdd = {
+                navController.navigate(TasksRoutes.Edit(itemId = null))
+            },
+            onNavigateToEdit = { id ->
+                navController.navigate(TasksRoutes.Edit(itemId = id))
+            },
+            onCloseEditor = { navController.popBackStack() },
+        )
+        gradesGraph(
+            onNavigateToAdd = {
+                navController.navigate(GradesRoutes.Edit(itemId = null))
+            },
+            onNavigateToEdit = { id ->
+                navController.navigate(GradesRoutes.Edit(itemId = id))
+            },
+            onCloseEditor = { navController.popBackStack() },
         )
     }
 }

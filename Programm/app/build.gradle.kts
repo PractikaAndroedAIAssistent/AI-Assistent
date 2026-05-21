@@ -63,6 +63,9 @@ dependencies {
     // ─── Feature modules ──────────────────────────────────────────────────
     implementation(project(":feature:feature_auth"))
     implementation(project(":feature:feature_home"))
+    implementation(project(":feature:feature_schedule"))
+    implementation(project(":feature:feature_tasks"))
+    implementation(project(":feature:feature_grades"))
 
     // ─── AndroidX / Compose ───────────────────────────────────────────────
     implementation(libs.androidx.core.ktx)

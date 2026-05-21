@@ -25,15 +25,17 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Auth Tests"
+rootProject.name = "Feature Tests"
 
 include(":auth-tests")
+include(":home-tests")
 include(":core:core_common")
 include(":core:core_ui")
 include(":core:core_designsystem")
 include(":core:core_network")
 include(":core:core_navigation")
 include(":feature:feature_auth")
+include(":feature:feature_home")
 
 project(":core:core_common").projectDir = file("../Programm/core/core_common")
 project(":core:core_ui").projectDir = file("../Programm/core/core_ui")
@@ -41,3 +43,4 @@ project(":core:core_designsystem").projectDir = file("../Programm/core/core_desi
 project(":core:core_network").projectDir = file("../Programm/core/core_network")
 project(":core:core_navigation").projectDir = file("../Programm/core/core_navigation")
 project(":feature:feature_auth").projectDir = file("../Programm/feature/feature_auth")
+project(":feature:feature_home").projectDir = file("../Programm/feature/feature_home")
