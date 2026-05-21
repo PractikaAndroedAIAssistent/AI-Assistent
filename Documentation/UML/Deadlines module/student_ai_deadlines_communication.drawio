@@ -1,0 +1,91 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" compressed="false" version="28.1.2">
+  <diagram id="student-ai-deadlines-communication" name="Страница-1">
+    <mxGraphModel dx="1649" dy="873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Диаграмма коммуникации модуля дедлайнов и задач" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=22;" parent="1" vertex="1">
+          <mxGeometry x="250" y="18" width="960" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value=":Пользователь" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="360" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="screen" value=":Экран дедлайнов&lt;br&gt;и задач" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="90" width="320" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="module" value=":Модуль дедлайнов&lt;br&gt;и задач" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="90" width="320" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" value=":Локальное&lt;br&gt;хранилище" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="980" y="610" width="280" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" value=":Локальные&lt;br&gt;напоминания" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="700" width="320" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="1: Открыть модуль" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="user" target="screen" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="406" />
+              <mxPoint x="360" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="2: Загрузить записи&lt;br&gt;(userId, роль)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="screen" target="module" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="3: Получить дедлайны&lt;br&gt;и задачи" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="module" target="storage" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1120" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="4: Вернуть список&lt;br&gt;записей" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="storage" target="module" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="656" />
+              <mxPoint x="1360" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="5: Нажать добавить" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="user" target="screen" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="6: Сохранить запись&lt;br&gt;(предмет, дата, время,&lt;br&gt;приоритет)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="screen" target="module" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="560" />
+              <mxPoint x="800" y="560" />
+              <mxPoint x="800" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="7: Сохранить дедлайн&lt;br&gt;или задачу" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="module" target="storage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" value="8: Создать локальное&lt;br&gt;напоминание" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="module" target="notify" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="250" />
+              <mxPoint x="930" y="250" />
+              <mxPoint x="930" y="746" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="9: Показать обновлённый&lt;br&gt;список" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="module" target="screen" edge="1">
+          <mxGeometry x="-0.4372" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="210" />
+              <mxPoint x="590" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
