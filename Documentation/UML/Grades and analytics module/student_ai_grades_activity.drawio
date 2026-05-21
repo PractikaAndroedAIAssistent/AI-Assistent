@@ -1,0 +1,258 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" compressed="false" version="27.0.9">
+  <diagram id="student-ai-grades-activity" name="Страница-1">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-1" value="Пользователь" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="50" y="70" width="300" height="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="fill_form" value="Ввести студента,&lt;br&gt;предмет, оценку и вес" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-1" vertex="1">
+          <mxGeometry x="27.5" y="902" width="260" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-2" value="Интерфейс системы" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="350" y="70" width="380" height="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-14" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-2" vertex="1">
+          <mxGeometry x="105" y="740" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="show_input_error" value="Показать ошибку&lt;br&gt;ввода" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="50" y="1120" width="230" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-19" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-2" vertex="1">
+          <mxGeometry x="105" y="1070" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-13" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-2" vertex="1">
+          <mxGeometry x="310" y="730" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="lane-2" vertex="1">
+          <mxGeometry x="195" y="1260" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-3" value="Модуль оценок и аналитики" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="730" y="70" width="420" height="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-8" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="190" y="306" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-21" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="-15" y="1056" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-4" value="AI-сервис" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="70" width="260" height="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="build_recommend" value="Сформировать&lt;br&gt;рекомендации" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="25" y="427" width="210" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-5" value="Локальное хранилище" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1410" y="70" width="250" height="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="read_grades" value="Получить оценки&lt;br&gt;и метаданные" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-5" vertex="1">
+          <mxGeometry x="30" y="92" width="190" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="store_grade" value="Сохранить оценку&lt;br&gt;в журнале" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-5" vertex="1">
+          <mxGeometry x="30" y="1077" width="190" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="188" y="118" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="open_module" value="Открыть модуль&lt;br&gt;оценок и аналитики" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="90" y="165" width="220" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_screen" value="Показать журнал,&lt;br&gt;фильтры и аналитику" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="430" y="165" width="260" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="request_grades" value="Запросить оценки&lt;br&gt;и данные по предмету" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="165" width="300" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="received" value="Данные&lt;br&gt;получены?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="845" y="275" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="show_error" value="Показать ошибку&lt;br&gt;загрузки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="430" y="400" width="240" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="calc_analytics" value="Рассчитать средний балл,&lt;br&gt;динамику и рейтинг" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="400" width="320" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="request_ai" value="Запросить рекомендации&lt;br&gt;по успеваемости" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="790" y="500" width="320" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_report" value="Показать журнал,&lt;br&gt;средний балл и аналитику" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="415" y="640" width="290" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="need_edit" value="Добавить&lt;br&gt;или изменить&lt;br&gt;оценку?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="525" y="730" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tap_edit" value="Нажать добавить&lt;br&gt;или изменить оценку" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="90" y="850" width="235" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_form" value="Показать форму&lt;br&gt;редактирования оценки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="425" y="875" width="260" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" value="Проверить&lt;br&gt;корректность полей" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="430" y="975" width="240" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="Поля&lt;br&gt;корректны?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="530" y="1090" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="save_grade" value="Сохранить оценку" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="800" y="1150" width="280" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="refresh_report" value="Обновить аналитику&lt;br&gt;и рекомендации" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="800" y="1260" width="300" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_updated" value="Показать обновлённый&lt;br&gt;журнал и аналитику" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="415" y="1260" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="start" target="open_module" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="open_module" target="show_screen" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_screen" target="request_grades" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="request_grades" target="read_grades" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="read_grades" target="received" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="260" />
+              <mxPoint x="940" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="received" target="show_error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="385" />
+              <mxPoint x="700" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_error" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="430" />
+              <mxPoint x="380" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="received" target="calc_analytics" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="calc_analytics" target="request_ai" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="request_ai" target="build_recommend" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="build_recommend" target="show_report" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="610" />
+              <mxPoint x="560" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_report" target="need_edit" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="need_edit" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="775" />
+              <mxPoint x="720" y="1310" />
+              <mxPoint x="560" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="need_edit" target="tap_edit" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="830" />
+              <mxPoint x="208" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="tap_edit" target="show_form" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_form" target="fill_form" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="950" />
+              <mxPoint x="220" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="fill_form" target="validate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="validate" target="valid" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="valid" target="show_input_error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1130" />
+              <mxPoint x="375" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_input_error" target="fill_form" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1219" />
+              <mxPoint x="60" y="1007" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="valid" target="save_grade" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="1130" />
+              <mxPoint x="780" y="1130" />
+              <mxPoint x="780" y="1179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="save_grade" target="store_grade" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="store_grade" target="refresh_report" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="1240" />
+              <mxPoint x="950" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="refresh_report" target="show_updated" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="1289" />
+              <mxPoint x="720" y="1289" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_updated" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="1289" />
+              <mxPoint x="360" y="1345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-label-6" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="760" y="368" width="90" height="12" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
