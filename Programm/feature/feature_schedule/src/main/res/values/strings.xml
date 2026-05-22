@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ─────────── TopBar / navigation ─────────── -->
+    <string name="feature_schedule_title">Расписание</string>
+    <string name="feature_schedule_lesson_edit_title_new">Новое занятие</string>
+    <string name="feature_schedule_lesson_edit_title_edit">Редактирование занятия</string>
+
+    <!-- ─────────── Mode toggle ─────────── -->
+    <string name="feature_schedule_mode_day">День</string>
+    <string name="feature_schedule_mode_week">Неделя</string>
+
+    <!-- ─────────── Actions ─────────── -->
+    <string name="feature_schedule_action_today">Сегодня</string>
+    <string name="feature_schedule_action_add">Добавить занятие</string>
+    <string name="feature_schedule_action_import">Импорт из ЛК вуза</string>
+    <string name="feature_schedule_action_edit">Редактировать</string>
+    <string name="feature_schedule_action_delete">Удалить</string>
+    <string name="feature_schedule_action_save">Сохранить</string>
+    <string name="feature_schedule_action_cancel">Отмена</string>
+    <string name="feature_schedule_action_filter">Фильтр по предмету</string>
+    <string name="feature_schedule_action_clear_filter">Сбросить фильтр</string>
+
+    <!-- ─────────── Empty states ─────────── -->
+    <string name="feature_schedule_empty_day">В этот день занятий нет</string>
+    <string name="feature_schedule_empty_week">На этой неделе занятий нет</string>
+    <string name="feature_schedule_empty_filtered">Нет занятий по выбранному предмету</string>
+    <string name="feature_schedule_empty_action_add">Добавить занятие</string>
+
+    <!-- ─────────── Lesson types ─────────── -->
+    <string name="feature_schedule_type_lecture">Лекция</string>
+    <string name="feature_schedule_type_seminar">Семинар</string>
+    <string name="feature_schedule_type_lab">Лабораторная</string>
+    <string name="feature_schedule_type_practice">Практика</string>
+    <string name="feature_schedule_type_consultation">Консультация</string>
+    <string name="feature_schedule_type_exam">Экзамен</string>
+    <string name="feature_schedule_type_other">Другое</string>
+
+    <!-- ─────────── Lesson edit form ─────────── -->
+    <string name="feature_schedule_field_subject">Предмет</string>
+    <string name="feature_schedule_field_lesson_type">Тип занятия</string>
+    <string name="feature_schedule_field_room">Аудитория</string>
+    <string name="feature_schedule_field_teacher">Преподаватель</string>
+    <string name="feature_schedule_field_date">Дата</string>
+    <string name="feature_schedule_field_start_time">Начало</string>
+    <string name="feature_schedule_field_end_time">Окончание</string>
+    <string name="feature_schedule_field_note">Примечание</string>
+
+    <!-- ─────────── Validation ─────────── -->
+    <string name="feature_schedule_error_subject_required">Укажите предмет</string>
+    <string name="feature_schedule_error_time_required">Укажите время начала и окончания</string>
+    <string name="feature_schedule_error_time_order">Время окончания должно быть позже времени начала</string>
+
+    <!-- ─────────── Days of week ─────────── -->
+    <string name="feature_schedule_day_monday_short">Пн</string>
+    <string name="feature_schedule_day_tuesday_short">Вт</string>
+    <string name="feature_schedule_day_wednesday_short">Ср</string>
+    <string name="feature_schedule_day_thursday_short">Чт</string>
+    <string name="feature_schedule_day_friday_short">Пт</string>
+    <string name="feature_schedule_day_saturday_short">Сб</string>
+    <string name="feature_schedule_day_sunday_short">Вс</string>
+
+    <!-- ─────────── Confirmation dialog ─────────── -->
+    <string name="feature_schedule_confirm_delete_title">Удалить занятие?</string>
+    <string name="feature_schedule_confirm_delete_message">Действие нельзя отменить</string>
+
+    <!-- ─────────── Import / snackbars ─────────── -->
+    <string name="feature_schedule_import_in_progress">Импортируем расписание…</string>
+    <string name="feature_schedule_import_success">Расписание импортировано</string>
+    <string name="feature_schedule_lesson_created">Занятие добавлено</string>
+    <string name="feature_schedule_lesson_updated">Занятие обновлено</string>
+    <string name="feature_schedule_lesson_deleted">Занятие удалено</string>
+</resources>
