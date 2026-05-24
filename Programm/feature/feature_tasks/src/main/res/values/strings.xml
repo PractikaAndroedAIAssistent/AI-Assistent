@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TopBar / navigation -->
+    <string name="feature_tasks_title_student">Дедлайны</string>
+    <string name="feature_tasks_title_teacher">Задачи</string>
+    <string name="feature_tasks_edit_new">Новая задача</string>
+    <string name="feature_tasks_edit_edit">Редактирование</string>
+
+    <!-- Sort menu -->
+    <string name="feature_tasks_sort">Сортировка</string>
+    <string name="feature_tasks_sort_by_date">По дате</string>
+    <string name="feature_tasks_sort_by_subject">По предмету</string>
+    <string name="feature_tasks_sort_by_priority">По приоритету</string>
+
+    <!-- Filter -->
+    <string name="feature_tasks_filter_all">Все</string>
+    <string name="feature_tasks_filter_active">Активные</string>
+    <string name="feature_tasks_filter_overdue">Просроченные</string>
+    <string name="feature_tasks_filter_completed">Выполненные</string>
+
+    <!-- Sections (grouping) -->
+    <string name="feature_tasks_section_overdue">Просрочено</string>
+    <string name="feature_tasks_section_today">Сегодня</string>
+    <string name="feature_tasks_section_this_week">На этой неделе</string>
+    <string name="feature_tasks_section_later">Позже</string>
+    <string name="feature_tasks_section_completed">Выполнено</string>
+
+    <!-- Empty states -->
+    <string name="feature_tasks_empty">Задач нет</string>
+    <string name="feature_tasks_empty_overdue">Просроченных задач нет</string>
+    <string name="feature_tasks_empty_completed">Выполненных задач нет</string>
+    <string name="feature_tasks_empty_action_add">Добавить задачу</string>
+
+    <!-- Actions -->
+    <string name="feature_tasks_action_add">Добавить</string>
+    <string name="feature_tasks_action_delete">Удалить</string>
+    <string name="feature_tasks_action_save">Сохранить</string>
+    <string name="feature_tasks_action_cancel">Отмена</string>
+    <string name="feature_tasks_action_toggle_complete">Отметить выполненной</string>
+
+    <!-- Edit form -->
+    <string name="feature_tasks_field_title">Что нужно сделать</string>
+    <string name="feature_tasks_field_subject">Предмет</string>
+    <string name="feature_tasks_field_description">Описание</string>
+    <string name="feature_tasks_field_due_date">Срок (дата)</string>
+    <string name="feature_tasks_field_due_time">Срок (время)</string>
+    <string name="feature_tasks_field_priority">Приоритет</string>
+    <string name="feature_tasks_field_group">Группа</string>
+
+    <!-- Validation -->
+    <string name="feature_tasks_error_title_required">Введите название задачи</string>
+    <string name="feature_tasks_error_due_required">Укажите срок</string>
+    <string name="feature_tasks_error_group_required">Укажите группу</string>
+
+    <!-- Priority -->
+    <string name="feature_tasks_priority_low">Низкий</string>
+    <string name="feature_tasks_priority_normal">Обычный</string>
+    <string name="feature_tasks_priority_high">Высокий</string>
+    <string name="feature_tasks_priority_critical">Критичный</string>
+
+    <!-- Common -->
+    <string name="feature_tasks_overdue_label">просрочено</string>
+</resources>
