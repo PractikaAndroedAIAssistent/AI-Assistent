@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="feature_flashcards_title">Карточки</string>
+    <string name="feature_flashcards_set_new">Новый набор</string>
+    <string name="feature_flashcards_set_edit">Редактирование набора</string>
+    <string name="feature_flashcards_study_title">Повторение</string>
+
+    <!-- Empty states -->
+    <string name="feature_flashcards_empty">Наборов карточек ещё нет</string>
+    <string name="feature_flashcards_empty_action_add">Создать набор</string>
+    <string name="feature_flashcards_empty_set">В наборе нет карточек</string>
+    <string name="feature_flashcards_empty_set_action_add">Добавить карточку</string>
+    <string name="feature_flashcards_no_due_today">Сегодня всё повторено</string>
+
+    <!-- Actions -->
+    <string name="feature_flashcards_action_add_set">Создать набор</string>
+    <string name="feature_flashcards_action_add_card">Добавить карточку</string>
+    <string name="feature_flashcards_action_study">Учить</string>
+    <string name="feature_flashcards_action_save">Сохранить</string>
+    <string name="feature_flashcards_action_cancel">Отмена</string>
+    <string name="feature_flashcards_action_delete">Удалить</string>
+    <string name="feature_flashcards_action_flip">Показать ответ</string>
+
+    <!-- Quality buttons (ТЗ §4.2.9) -->
+    <string name="feature_flashcards_quality_unknown">Не знаю</string>
+    <string name="feature_flashcards_quality_bad">Плохо</string>
+    <string name="feature_flashcards_quality_normal">Нормально</string>
+    <string name="feature_flashcards_quality_good">Хорошо</string>
+    <string name="feature_flashcards_quality_excellent">Отлично</string>
+
+    <!-- Set fields -->
+    <string name="feature_flashcards_field_set_name">Название набора</string>
+    <string name="feature_flashcards_field_subject">Предмет</string>
+
+    <!-- Card fields -->
+    <string name="feature_flashcards_field_front">Вопрос</string>
+    <string name="feature_flashcards_field_back">Ответ</string>
+
+    <!-- Validation -->
+    <string name="feature_flashcards_error_name_required">Введите название набора</string>
+    <string name="feature_flashcards_error_front_required">Введите вопрос</string>
+    <string name="feature_flashcards_error_back_required">Введите ответ</string>
+
+    <!-- Set card meta -->
+    <string name="feature_flashcards_due_count">К повторению: %1$d</string>
+    <string name="feature_flashcards_total_count">Всего карточек: %1$d</string>
+
+    <!-- Study screen -->
+    <string name="feature_flashcards_session_progress">%1$d из %2$d</string>
+    <string name="feature_flashcards_session_completed">Сессия завершена</string>
+</resources>
