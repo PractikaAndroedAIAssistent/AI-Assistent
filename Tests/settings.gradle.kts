@@ -30,6 +30,7 @@ rootProject.name = "Feature Tests"
 include(":auth-tests")
 include(":home-tests")
 include(":schedule-tests")
+include(":tasks-tests")
 include(":core:core_common")
 include(":core:core_ui")
 include(":core:core_designsystem")
