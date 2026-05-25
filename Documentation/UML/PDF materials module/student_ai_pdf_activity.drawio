@@ -1,0 +1,163 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" compressed="false" version="27.0.9">
+  <diagram id="student-ai-pdf-activity" name="Страница-1">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-1" value="Пользователь" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="52.5" y="70" width="257.5" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-2" value="Интерфейс системы" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="310" y="70" width="340" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="show_result" value="Показать карточку PDF&lt;br&gt;и статус загрузки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="65" y="890" width="235" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="lane-2" vertex="1">
+          <mxGeometry x="183.75" y="1020" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-2" source="show_result" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="199" y="980" />
+              <mxPoint x="199" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="show_status" value="Показать статус загрузки&lt;br&gt;и число символов" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="37.5" y="635" width="272.5" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="show_error" value="Показать понятное&lt;br&gt;сообщение об ошибке" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="35" y="416" width="270" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-2" source="show_error" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="559" />
+              <mxPoint x="20" y="1035" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane-3" value="Системный picker" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="650" y="70" width="260" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-4" value="Модуль PDF-материалов" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="910" y="70" width="420" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-9" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-4" vertex="1">
+          <mxGeometry x="30" y="420" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="split_text" value="Разбить текст&lt;br&gt;на фрагменты для поиска" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="95.5" y="750" width="242" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-11" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-4" vertex="1">
+          <mxGeometry x="199.5" y="491" width="50.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="receive_pdf" value="Получить путь&lt;br&gt;и имя PDF-файла" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="52.5" y="200" width="285" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="extract_text" value="Извлечь текст&lt;br&gt;из PDF" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="42.5" y="305" width="305" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="extracted" value="Текст&lt;br&gt;извлечён?" style="rhombus;whiteSpace=wrap;html=1;" parent="lane-4" vertex="1">
+          <mxGeometry x="99.5" y="400" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-4" source="receive_pdf" target="extract_text" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-4" source="extract_text" target="extracted" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-5" value="Локальное хранилище" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1330" y="70" width="290" height="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="save_pdf" value="Сохранить имя файла,&lt;br&gt;текст, предмет&lt;br&gt;и фрагменты" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-5" vertex="1">
+          <mxGeometry x="30" y="746" width="230" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="168" y="118" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="open_module" value="Открыть&lt;br&gt;PDF-материалы" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="75" y="165" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_screen" value="Показать список PDF&lt;br&gt;и кнопку загрузить" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="365" y="165" width="255" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="select_upload" value="Нажать&lt;br&gt;«Загрузить PDF»" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="75" y="270" width="210" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="open_picker" value="Открыть системный&lt;br&gt;выбор файла" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="355" y="270" width="265" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="choose_file" value="Выбрать PDF&lt;br&gt;с устройства" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="690" y="270" width="190" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="choose_subject" value="Выбрать предмет&lt;br&gt;для PDF" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="80" y="705" width="195" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="start" target="open_module" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="open_module" target="show_screen" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_screen" target="select_upload" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="492" y="240" />
+              <mxPoint x="180" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="select_upload" target="open_picker" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="open_picker" target="choose_file" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="choose_file" target="receive_pdf" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="extracted" target="show_error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="extracted" target="show_status" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1105" y="737" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_status" target="choose_subject" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="335" y="737" />
+              <mxPoint x="290" y="737" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="choose_subject" target="split_text" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="852" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="split_text" target="save_pdf" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="save_pdf" target="show_result" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1475" y="990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
