@@ -1,0 +1,228 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" compressed="false" version="27.0.9">
+  <diagram id="student-ai-notes-activity" name="Страница-1">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-1" value="Пользователь" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="40" y="70" width="310" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-2" value="Интерфейс системы" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="350" y="70" width="380" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="show_updated" value="Показать обновлённый&lt;br&gt;конспект или список" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="45" y="1050" width="290" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_input_error" value="Показать ошибку&lt;br&gt;ввода" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="40" y="950" width="135" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" value="Поля&lt;br&gt;корректны?" style="rhombus;whiteSpace=wrap;html=1;" parent="lane-2" vertex="1">
+          <mxGeometry x="220" y="939" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-2" source="valid" target="show_input_error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="980" />
+              <mxPoint x="5" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-label-17" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-2" vertex="1">
+          <mxGeometry x="180" y="984" width="55" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="validate" value="Проверить&lt;br&gt;заполнение полей" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="80" y="848" width="240" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-2" source="validate" target="valid" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-19" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-2" vertex="1">
+          <mxGeometry x="330" y="950" width="40" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="show_error" value="Показать ошибку&lt;br&gt;загрузки" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="80" y="256" width="240" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_empty" value="Показать пустой список&lt;br&gt;и кнопку создать" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-2" vertex="1">
+          <mxGeometry x="67.5" y="426" width="280" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-3" value="Модуль конспектов" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="730" y="70" width="430" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-8" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="190" y="350" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-10" value="да" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="120" y="650" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-9" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="40" y="430" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-6" value="нет" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="lane-3" vertex="1">
+          <mxGeometry x="15" y="260" width="90" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="has_notes" value="Есть&lt;br&gt;конспекты?" style="rhombus;whiteSpace=wrap;html=1;" parent="lane-3" vertex="1">
+          <mxGeometry x="120" y="410" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="save_note" value="Сохранить конспект" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-3" vertex="1">
+          <mxGeometry x="65" y="950" width="300" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="received" value="Данные&lt;br&gt;получены?" style="rhombus;whiteSpace=wrap;html=1;" parent="lane-3" vertex="1">
+          <mxGeometry x="120" y="240" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="lane-3" source="received" target="has_notes" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="245" />
+              <mxPoint x="310" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane-4" value="Локальное хранилище" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="70" width="290" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="read_notes" value="Получить конспекты&lt;br&gt;из хранилища" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="45" y="92" width="220" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="store_note" value="Сохранить заголовок,&lt;br&gt;текст, предмет и теги" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="lane-4" vertex="1">
+          <mxGeometry x="45" y="947" width="220" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="188" y="118" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="open_module" value="Открыть&lt;br&gt;конспекты" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="90" y="165" width="220" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_screen" value="Показать список&lt;br&gt;и кнопку создать" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="430" y="165" width="250" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="request_notes" value="Запросить список&lt;br&gt;конспектов (userId)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="800" y="165" width="290" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="show_list" value="Показать список&lt;br&gt;конспектов" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="415" y="720" width="260" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="select_note" value="Выбрать или создать&lt;br&gt;конспект" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="90" y="820" width="240" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="open_editor" value="Открыть редактор&lt;br&gt;конспекта" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="425" y="820" width="250" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="edit_note" value="Ввести заголовок,&lt;br&gt;текст, предмет и теги" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="80" y="915" width="240" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="525" y="1210" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="start" target="open_module" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="open_module" target="show_screen" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_screen" target="request_notes" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="request_notes" target="read_notes" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="read_notes" target="received" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1315" y="250" />
+              <mxPoint x="945" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="received" target="show_error" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="355" />
+              <mxPoint x="800" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_error" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="429" />
+              <mxPoint x="380" y="1225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="has_notes" target="show_empty" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="525" />
+              <mxPoint x="720" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="has_notes" target="show_list" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="749" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_empty" target="select_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="649" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_list" target="select_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="749" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="select_note" target="open_editor" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="open_editor" target="edit_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="890" />
+              <mxPoint x="215" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="edit_note" target="validate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_input_error" target="edit_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="365" y="1044" />
+              <mxPoint x="60" y="1044" />
+              <mxPoint x="60" y="947" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="valid" target="save_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1050" />
+              <mxPoint x="780" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="save_note" target="store_note" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="store_note" target="show_updated" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1315" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="show_updated" target="end" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
