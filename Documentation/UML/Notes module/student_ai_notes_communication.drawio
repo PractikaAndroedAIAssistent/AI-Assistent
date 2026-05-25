@@ -1,0 +1,164 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" compressed="false" version="27.0.9">
+  <diagram id="student-ai-notes-communication" name="Страница-1">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Диаграмма коммуникации модуля конспектов" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=22;" parent="1" vertex="1">
+          <mxGeometry x="250" y="18" width="920" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value=":Пользователь" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="330" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="screen" value=":Экран&lt;br&gt;конспектов" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="80" width="280" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="editor" value=":Редактор&lt;br&gt;конспекта" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="473" width="280" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="module" value=":Модуль&lt;br&gt;конспектов" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="970" y="80" width="290" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" value=":Локальное&lt;br&gt;хранилище" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="970" y="565" width="290" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" value="1: Открыть конспекты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="user" target="screen" edge="1">
+          <mxGeometry x="-0.2814" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="126" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" value="2: Загрузить список&lt;br&gt;конспектов" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" edge="1">
+          <mxGeometry x="-0.4545" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="100" />
+              <mxPoint x="810" y="100" />
+            </Array>
+            <mxPoint x="640" y="100" as="sourcePoint" />
+            <mxPoint x="970" y="100" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" value="3: Получить&lt;br&gt;конспекты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" edge="1">
+          <mxGeometry x="-0.3995" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="370" />
+              <mxPoint x="1240" y="370" />
+            </Array>
+            <mxPoint x="1240" y="172" as="sourcePoint" />
+            <mxPoint x="1240" y="565" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-4" value="4: Вернуть список" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="storage" target="module" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="611" />
+              <mxPoint x="1320" y="126" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" value="5: Показать список&lt;br&gt;или пустое состояние" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="screen" edge="1">
+          <mxGeometry x="-0.3143" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="150" />
+            </Array>
+            <mxPoint as="offset" />
+            <mxPoint x="970" y="130" as="sourcePoint" />
+            <mxPoint x="650" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" value="6: Показать список&lt;br&gt;и кнопку создать" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="screen" target="user" edge="1">
+          <mxGeometry x="0.2035" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="108" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" value="7: Выбрать или создать" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="user" target="screen" edge="1">
+          <mxGeometry x="0.2436" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" value="8: Открыть редактор" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="screen" target="editor" edge="1">
+          <mxGeometry x="-0.332" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="340" />
+              <mxPoint x="610" y="340" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" value="9: Показать поля&lt;br&gt;конспекта" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="editor" target="user" edge="1">
+          <mxGeometry x="-0.0244" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="490" />
+              <mxPoint x="430" y="370" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" value="10: Ввести и&lt;br&gt;сохранить" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="user" target="editor" edge="1">
+          <mxGeometry x="0.6577" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="390" />
+              <mxPoint x="360" y="519" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" value="11: Сохранить&lt;br&gt;конспект" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" source="editor" target="module" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" value="12: Записать&lt;br&gt;конспект" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="540" />
+              <mxPoint x="1180" y="540" />
+            </Array>
+            <mxPoint x="1180" y="172" as="sourcePoint" />
+            <mxPoint x="1180" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" value="13: Результат&lt;br&gt;сохранения" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" edge="1">
+          <mxGeometry x="-0.313" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1114.5" y="370" />
+              <mxPoint x="1114.5" y="370" />
+            </Array>
+            <mxPoint x="1114.5" y="565" as="sourcePoint" />
+            <mxPoint x="1114.5" y="172" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" value="14: Вернуть&lt;br&gt;конспект" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="module" target="editor" edge="1">
+          <mxGeometry x="0.562" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="530" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" value="15: Показать&lt;br&gt;конспект" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;dashed=1;" parent="1" source="editor" target="user" edge="1">
+          <mxGeometry x="-0.1429" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="550" />
+              <mxPoint x="330" y="410" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
