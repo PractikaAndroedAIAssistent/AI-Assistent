@@ -1,0 +1,154 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" compressed="false" version="29.6.1">
+  <diagram id="student-ai-flashcards-state" name="Страница-1">
+    <mxGraphModel dx="2253" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=1;fontSize=22;" value="Диаграмма состояний модуля карточек повторения" vertex="1">
+          <mxGeometry height="32" width="570" x="205" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="waiting" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Ожидание действия&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / открыть модуль карточек&lt;br&gt;do / ожидание выбора сценария&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="320" x="330" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="manual" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Создание вручную&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / открыть форму карточки&lt;br&gt;do / ввод вопроса и ответа&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="250" x="40" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="generation" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Генерация карточек&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / выбрать источник и набор&lt;br&gt;do / запросить карточки по материалу&lt;/div&gt;" vertex="1">
+          <mxGeometry height="122" width="320" x="330" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Ошибка генерации&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / показать сообщение&lt;br&gt;do / ожидание повторной попытки&lt;/div&gt;" vertex="1">
+          <mxGeometry height="96" width="250" x="40" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="set_ready" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Набор готов&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / показать карточки набора&lt;br&gt;do / ожидание старта повторения&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="240" x="700" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Повторение карточки&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / показать вопрос&lt;br&gt;do / ожидание показа ответа&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="300" x="335" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="answer" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Ответ показан&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / показать обратную сторону&lt;br&gt;do / ожидание оценки знания&lt;/div&gt;" vertex="1">
+          <mxGeometry height="108" width="240" x="850" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="saved" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF8C4;strokeColor=#FF0000;strokeWidth=2;align=center;verticalAlign=middle;spacing=6;" value="&lt;div style=&#39;font-weight:700;font-size:16px;border-bottom:1px solid #ff0000;padding-bottom:4px;margin-bottom:6px;&#39;&gt;Прогресс обновлён&lt;/div&gt;&lt;div style=&#39;font-size:13px;line-height:1.5;&#39;&gt;entry / сохранить уровень и дату&lt;br&gt;do / обновить статистику&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="320" x="330" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="478" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#FF0000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="34" width="34" x="473" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="waiting" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" edge="1" parent="1" source="waiting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="manual" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" edge="1" parent="1" source="waiting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="generation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" edge="1" parent="1" source="manual" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="set_ready" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="339" />
+              <mxPoint x="320" y="480" />
+              <mxPoint x="670" y="480" />
+              <mxPoint x="670" y="554" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" edge="1" parent="1" source="generation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="error" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" edge="1" parent="1" source="generation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="set_ready" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" edge="1" parent="1" source="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="waiting" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="470" />
+              <mxPoint x="20" y="470" />
+              <mxPoint x="20" y="160" />
+              <mxPoint x="330" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" edge="1" parent="1" source="set_ready" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="review" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="640" />
+              <mxPoint x="820" y="744" />
+              <mxPoint x="635" y="744" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-9" edge="1" parent="1" source="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="answer" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="710" />
+              <mxPoint x="750" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" edge="1" parent="1" source="answer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="saved" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="744" />
+              <mxPoint x="830" y="917" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" edge="1" parent="1" source="saved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-12" edge="1" parent="1" source="saved" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#FF0000;strokeWidth=2;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-2" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[создать вручную]" vertex="1">
+          <mxGeometry height="32" width="145" x="205" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-3" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[сгенерировать]" vertex="1">
+          <mxGeometry height="22" width="95" x="470" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-4" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[карточка сохранена]" vertex="1">
+          <mxGeometry height="32" width="143.5" x="480" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-5" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[ошибка]" vertex="1">
+          <mxGeometry height="15" width="50" x="370" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-6" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[карточки созданы]" vertex="1">
+          <mxGeometry height="32" width="210" x="720" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-7" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[повторить]" vertex="1">
+          <mxGeometry height="32" width="80" x="-10" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-8" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[начать повторение]" vertex="1">
+          <mxGeometry height="32" width="135" x="757.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-9" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[показать ответ]" vertex="1">
+          <mxGeometry height="32" width="120" x="757.5" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-10" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[не знаю/плохо/нормально/хорошо/отлично]" vertex="1">
+          <mxGeometry height="32" width="150" x="650" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-11" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[следующая карточка]" vertex="1">
+          <mxGeometry height="17" width="165" x="400" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-12" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="[завершить сессию]" vertex="1">
+          <mxGeometry height="21" width="150" x="420" y="980" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

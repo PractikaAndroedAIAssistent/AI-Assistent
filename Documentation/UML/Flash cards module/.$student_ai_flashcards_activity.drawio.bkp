@@ -1,0 +1,245 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" compressed="false" version="29.6.1">
+  <diagram id="student-ai-flashcards-activity" name="Страница-1">
+    <mxGraphModel dx="2593" dy="1544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane-1" parent="1" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" value="Пользователь" vertex="1">
+          <mxGeometry height="1350" width="250" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane-1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="103" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="manual_input" parent="lane-1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Ввести вопрос,&lt;br&gt;ответ и набор" vertex="1">
+          <mxGeometry height="64" width="220" x="5" y="461" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-2" parent="1" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" value="Интерфейс системы" vertex="1">
+          <mxGeometry height="1350" width="340" x="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="show_screen" parent="lane-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать наборы&lt;br&gt;и действия модуля" vertex="1">
+          <mxGeometry height="58" width="290" x="30" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="method" parent="lane-2" style="rhombus;whiteSpace=wrap;html=1;" value="Способ&lt;br&gt;создания?" vertex="1">
+          <mxGeometry height="90" width="180" x="85" y="199" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-3" edge="1" parent="lane-2" source="show_screen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="method" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="163" />
+              <mxPoint x="205" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-label-4" parent="lane-2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="вручную" vertex="1">
+          <mxGeometry height="24" width="90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-5" parent="lane-2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="по материалу" vertex="1">
+          <mxGeometry height="24" width="90" x="220" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-5" edge="1" parent="lane-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="174.74" y="298.51" />
+              <mxPoint x="174.74" y="298.51" />
+            </Array>
+            <mxPoint x="175" y="290" as="sourcePoint" />
+            <mxPoint x="174.7632558139535" y="333.51" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="show_set" parent="lane-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать набор&lt;br&gt;карточек" vertex="1">
+          <mxGeometry height="58" width="260" x="60" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="show_front" parent="lane-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать вопрос&lt;br&gt;карточки" vertex="1">
+          <mxGeometry height="58" width="235" x="72.5" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="show_progress" parent="lane-2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать прогресс&lt;br&gt;и следующую карточку" vertex="1">
+          <mxGeometry height="64" width="245" x="80" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="lane-2" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="187.5" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-22" edge="1" parent="lane-2" source="show_progress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-3" parent="1" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" value="Модуль карточек повторения" vertex="1">
+          <mxGeometry height="1350" width="430" x="640" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-label-12" parent="lane-3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="да" vertex="1">
+          <mxGeometry height="24" width="90" x="270" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-4" parent="1" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" value="AI-сервис" vertex="1">
+          <mxGeometry height="1350" width="280" x="1070" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-5" parent="1" style="swimlane;horizontal=1;startSize=44;html=1;fontStyle=1;fontSize=16;" value="Локальное хранилище" vertex="1">
+          <mxGeometry height="1350" width="360" x="1350" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="save_progress" parent="lane-5" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Сохранить уровень,&lt;br&gt;дату и статистику" vertex="1">
+          <mxGeometry height="72" width="250" x="60" y="991" as="geometry" />
+        </mxCell>
+        <mxCell id="open_module" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Открыть&lt;br&gt;карточки повторения" vertex="1">
+          <mxGeometry height="58" width="210" x="60" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="select_source" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Выбрать источник&lt;br&gt;материала и набор" vertex="1">
+          <mxGeometry height="64" width="330" x="340" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="request_generate" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Запросить генерацию&lt;br&gt;карточек" vertex="1">
+          <mxGeometry height="64" width="250" x="730" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="generate_cards" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Сформировать&lt;br&gt;карточки" vertex="1">
+          <mxGeometry height="64" width="220" x="1100" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="generated" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Карточки&lt;br&gt;получены?" vertex="1">
+          <mxGeometry height="90" width="180" x="765" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="show_error" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать ошибку&lt;br&gt;генерации" vertex="1">
+          <mxGeometry height="58" width="290" x="340" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="save_cards" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Сохранить карточки,&lt;br&gt;набор и источник" vertex="1">
+          <mxGeometry height="72" width="250" x="1410" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="start_review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Начать&lt;br&gt;повторение" vertex="1">
+          <mxGeometry height="58" width="210" x="65" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="reveal_answer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать&lt;br&gt;ответ" vertex="1">
+          <mxGeometry height="58" width="210" x="65" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="show_back" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Показать ответ&lt;br&gt;и шкалу оценки" vertex="1">
+          <mxGeometry height="58" width="280" x="365" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="choose_level" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Выбрать уровень:&lt;br&gt;не знаю ... отлично" vertex="1">
+          <mxGeometry height="64" width="210" x="65" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="update_schedule" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" value="Рассчитать следующую&lt;br&gt;дату повторения" vertex="1">
+          <mxGeometry height="64" width="290" x="735" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="open_module" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2" edge="1" parent="1" source="open_module" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_screen" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-4" edge="1" parent="1" source="method" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="manual_input" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" edge="1" parent="1" source="manual_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="save_cards" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="553" />
+              <mxPoint x="280" y="610" />
+              <mxPoint x="1380" y="610" />
+              <mxPoint x="1380" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" edge="1" parent="1" source="select_source" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="request_generate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-8" edge="1" parent="1" source="request_generate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="generate_cards" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-9" edge="1" parent="1" source="generate_cards" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="generated" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1210" y="480" />
+              <mxPoint x="855" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-10" edge="1" parent="1" source="generated" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_error" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="535" />
+              <mxPoint x="680" y="649" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-11" edge="1" parent="1" source="show_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="649" />
+              <mxPoint x="330" y="1325" />
+              <mxPoint x="505" y="1325" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" edge="1" parent="1" source="generated" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="save_cards" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="535" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-13" edge="1" parent="1" source="save_cards" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_set" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1410" y="730" />
+              <mxPoint x="700" y="730" />
+              <mxPoint x="700" y="769" />
+              <mxPoint x="650" y="769" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-14" edge="1" parent="1" source="show_set" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="start_review" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="769" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-15" edge="1" parent="1" source="start_review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_front" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="860" />
+              <mxPoint x="320" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-16" edge="1" parent="1" source="show_front" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="reveal_answer" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="869" />
+              <mxPoint x="320" y="930" />
+              <mxPoint x="170" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-17" edge="1" parent="1" source="reveal_answer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_back" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-18" edge="1" parent="1" source="show_back" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="choose_level" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1030" />
+              <mxPoint x="170" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-19" edge="1" parent="1" source="choose_level" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="update_schedule" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="1082" />
+              <mxPoint x="700" y="1082" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-20" edge="1" parent="1" source="update_schedule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="save_progress" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-21" edge="1" parent="1" source="save_progress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;" target="show_progress" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-label-10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" value="нет" vertex="1">
+          <mxGeometry height="24" width="90" x="700" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
